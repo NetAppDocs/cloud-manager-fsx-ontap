@@ -4,4 +4,29 @@ settings:
     pdf_enabled: true
   prod:
     pdf_enabled: true
-sidebar: 
+sidebar:
+  entries:
+    - title: Back to Cloud Manager documentation
+      url: https://docs.netapp.com/us-en/cloud-manager-family
+    - title: Amazon FSx for ONTAP docs
+      url: /index.html
+    - title: Release notes
+      url: /whats-new.html
+    - title: Get started
+      entries:
+        - title: Learn about FSx for ONTAP
+          url: /concept_fsx_aws.html
+        - title: Quick start
+          url: /task_getting_started_fsx.html
+        - title: Set up permissions for FSx for ONTAP
+          url: /task_setting_up_permissions_fsx.html
+    - title: Use Amazon FSx for ONTAP
+      entries:
+        - title: Create and manage a working environment
+          url: /task_creating_fsx_working_environment.html
+        - title: Create and manage volumes
+          url: /task_manage_fsx_volumes.html
+    - title: Knowledge and support
+      url: /get-help.html
+    - title: Legal notices
+      url: /legal-notices.html
