@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task_creating_fsx_working_environment.html
+permalink: task-creating-fsx-working-environment.html
 keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment
 summary: Cloud Manager enables you to create an FSx for ONTAP working environment to add volumes and manage additional data services.
 ---
@@ -17,13 +17,13 @@ Using Cloud Manager you can create and manage FSx for ONTAP working environments
 
 == Create an Amazon FSx for ONTAP working environment
 
-The first step is to create an FSx for ONTAP working environment. If you already created an FSx for ONTAP file system in the AWS Management Console, you can link:task_creating_fsx_working_environment.html#discover-an-existing-fsx-for-ontap-file-system[discover it using Cloud Manager].
+The first step is to create an FSx for ONTAP working environment. If you already created an FSx for ONTAP file system in the AWS Management Console, you can link:task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system[discover it using Cloud Manager].
 
 .Before you begin
 
 Before creating your FSx for ONTAP working environment in Cloud Manager, you will need:
 
-* The ARN of an IAM role that gives Cloud Manager the permissions needed to create an FSx for ONTAP working environment. See link:task_setting_up_permissions_fsx.html[adding AWS credentials to Cloud Manager] for details.
+* The ARN of an IAM role that gives Cloud Manager the permissions needed to create an FSx for ONTAP working environment. See link:task-setting-up-permissions-fsx.html[adding AWS credentials to Cloud Manager] for details.
 
 * The region and VPN information for where you will create the FSx for ONTAP instance.
 
@@ -41,7 +41,7 @@ image:screenshot_add_fsx_working_env.png[A screenshot of adding a working enviro
 +
 image:screenshot-fsx-assume-role-present.png[A screenshot showing dropdown for AWS roles]
 
-.. If there is no IAM role in your account, click *Credentials Page* and follow the steps in the wizard to add an ARN for an AWS IAM role with FSx for ONTAP credentials. See link:task_setting_up_permissions_fsx.html[adding AWS credentials to Cloud Manager] for details.
+.. If there is no IAM role in your account, click *Credentials Page* and follow the steps in the wizard to add an ARN for an AWS IAM role with FSx for ONTAP credentials. See link:task-setting-up-permissions-fsx.html[adding AWS credentials to Cloud Manager] for details.
 +
 image:screenshot-fsx-assume-role-not-present.png[A screenshot of the steps to add the ARN for an AWS IAM role with FSx for ONTAP permission.]
 
@@ -64,7 +64,7 @@ image:screenshot_add_fsx_credentials.png[A screenshot of adding credentials for 
 +
 image:screenshot_add_fsx_region.png[A screenshot of adding region and VPC for FSx for ONTAP]
 
-. Leave _CIDR Range_ empty and click *Next* to automatically set an available range. Optionally, you can use link:task_setting_up_transit_gateway.html[AWS Transit Gateway] to manually configure a range.
+. Leave _CIDR Range_ empty and click *Next* to automatically set an available range. Optionally, you can use link:task-setting-up-transit-gateway.html[AWS Transit Gateway] to manually configure a range.
 +
 image:screenshot_add_fsx_floatingIP.png[A screenshot of adding region and VPC for FSx for ONTAP]
 
@@ -72,7 +72,7 @@ image:screenshot_add_fsx_floatingIP.png[A screenshot of adding region and VPC fo
 +
 image:screenshot_add_fsx_route_table.png[A screenshot of selecting a route table for FSx for ONTAP]
 
-. Accept the default AWS master key or click *Change Key* to select a different AWS Customer Master Key (CMK). For more information on CMK, see link:https://docs.netapp.com/us-en/occm/task_setting_up_kms.html[Setting up the AWS KMS]. Click *Next* to continue.
+. Accept the default AWS master key or click *Change Key* to select a different AWS Customer Master Key (CMK). For more information on CMK, see link:https://docs.netapp.com/us-en/occm/task-setting-up-kms.html[Setting up the AWS KMS]. Click *Next* to continue.
 +
 image:screenshot_add_fsx_encryption.png[A screenshot of setting the default master key for FSx for ONTAP]
 
@@ -147,7 +147,7 @@ You can delete the FSx for ONTAP from Cloud Manager.
 
 .Before you begin
 
-* You must link:task_manage_fsx_volumes.html#delete-volumes[delete all volumes] associated with the file system.
+* You must link:task-manage-fsx-volumes.html#delete-volumes[delete all volumes] associated with the file system.
 
 NOTE: You will need an active Connector in AWS to remove or delete volumes.
 

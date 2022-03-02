@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task_manage_fsx_volumes.html
+permalink: task-manage-fsx-volumes.html
 keywords: fsx for ontap, fsx, aws, create volumes, delete volumes, create nfs volumes, delete nfs volumes, cifs volumes, tiering policy, mount path, get mount path, iscsi, mount volume, delete working environment
 summary: After you set up your working environment, you can create and manage Amazon FSx for ONTAP volumes, clones and snapshots, change tiering policies, and remove or delete FSx for ONTAP.
 ---
@@ -25,9 +25,9 @@ You can create iSCSI volumes using ONTAP CLI, ONTAP API, or Cloud Manager API an
 
 You need:
 
-* An active link:task_creating_connectors_aws.html[Connector in AWS].
+* An active link:task-creating-connectors-aws.html[Connector in AWS].
 
-* If you want to use SMB, you must have set up DNS and Active Directory.
+* If you want to use SMB, you must have set up DNS and Active Directory. For more information on DNS and Active Directory network configuration, see link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/self-manage-prereqs.html[AWS: Prerequisites for using a self-managed Microsoft AD^].
 
 .Steps
 
@@ -184,9 +184,9 @@ Change the tiering policy for the volume.
 
 == Replicate and sync data
 
-You can replicate data between storage environments using Cloud Manager. To configure FSx for ONTAP replication, see link:https://docs.netapp.com/us-en/occm/task_replicating_data.html[replicating data between systems^].
+You can replicate data between storage environments using Cloud Manager. To configure FSx for ONTAP replication, see link:https://docs.netapp.com/us-en/occm/task-replicating-data.html[replicating data between systems^].
 
-You can create sync relationships using Cloud Sync in Cloud Manager. To configure sync relationships, see link:https://docs.netapp.com/us-en/occm/task_sync_quick_start.html[create sync relationships^].
+You can create sync relationships using Cloud Sync in Cloud Manager. To configure sync relationships, see link:https://docs.netapp.com/us-en/occm/task-sync-quick-start.html[create sync relationships^].
 
 //TIP: Drag-and-drop sync is not available in FSx for ONTAP at this time. You can manually configure sync relationships using the *Sync* menu.
 

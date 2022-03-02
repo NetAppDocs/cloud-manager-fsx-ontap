@@ -15,17 +15,17 @@ sidebar:
     - title: Get started
       entries:
         - title: Learn about FSx for ONTAP
-          url: /concept_fsx_aws.html
+          url: /concept-fsx-aws.html
         - title: Quick start
-          url: /task_getting_started_fsx.html
+          url: /task-getting-started-fsx.html
         - title: Set up permissions for FSx for ONTAP
-          url: /task_setting_up_permissions_fsx.html
+          url: /task-setting-up-permissions-fsx.html
     - title: Use Amazon FSx for ONTAP
       entries:
         - title: Create and manage a working environment
-          url: /task_creating_fsx_working_environment.html
+          url: /task-creating-fsx-working-environment.html
         - title: Create and manage volumes
-          url: /task_manage_fsx_volumes.html
+          url: /task-manage-fsx-volumes.html
     - title: Knowledge and support
       url: /get-help.html
     - title: Legal notices

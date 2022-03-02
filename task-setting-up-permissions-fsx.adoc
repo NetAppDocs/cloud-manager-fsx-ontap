@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task_setting_up_permissions_fsx.html
+permalink: task-setting-up-permissions-fsx.html
 keywords: fsx for ontap, iam, user role, permissions
 summary: In order to create or manage your Amazon FSx for ONTAP working environment, you need to have an AWS access key and secret key for an IAM user role with FSx for ONTAP permissions.
 ---
@@ -152,5 +152,5 @@ You can now use the credentials when creating an FSx for ONTAP working environme
 
 == Related links
 
-* link:concept_accounts_aws.html[AWS credentials and permissions]
-* link:task_adding_aws_accounts.html[Managing AWS credentials for Cloud Manager]
+* link:concept-accounts-aws.html[AWS credentials and permissions]
+* link:task-adding-aws-accounts.html[Managing AWS credentials for Cloud Manager]
