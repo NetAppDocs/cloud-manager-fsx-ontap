@@ -27,9 +27,9 @@ link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html[Am
 
 * Using a Connector in AWS and Cloud Manager, you can create and manage volumes, replicate data, and integrate FSx for ONTAP with NetApp cloud services, such as Data Sense and Cloud Sync.
 
-* Using Artificial Intelligence (AI) driven technology, Cloud Data Sense can help you understand data context and identify sensitive data that resides in your FSx for ONTAP accounts. link:concept-cloud-compliance.html[Learn more^].
+* Using Artificial Intelligence (AI) driven technology, Cloud Data Sense can help you understand data context and identify sensitive data that resides in your FSx for ONTAP accounts. https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Learn more^].
 
-* Using NetApp Cloud Sync, you can automate data migration to any target in the cloud or on premises. link:concept-cloud-sync.html[Learn more^]
+* Using NetApp Cloud Sync, you can automate data migration to any target in the cloud or on premises. https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html[Learn more^]
 
 == Cost
 

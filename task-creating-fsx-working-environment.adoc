@@ -64,7 +64,7 @@ image:screenshot_add_fsx_credentials.png[A screenshot of adding credentials for 
 +
 image:screenshot_add_fsx_region.png[A screenshot of adding region and VPC for FSx for ONTAP]
 
-. Leave _CIDR Range_ empty and click *Next* to automatically set an available range. Optionally, you can use link:task-setting-up-transit-gateway.html[AWS Transit Gateway] to manually configure a range.
+. Leave _CIDR Range_ empty and click *Next* to automatically set an available range. Optionally, you can use https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-transit-gateway.html[AWS Transit Gateway^] to manually configure a range.
 +
 image:screenshot_add_fsx_floatingIP.png[A screenshot of adding region and VPC for FSx for ONTAP]
 
@@ -72,7 +72,7 @@ image:screenshot_add_fsx_floatingIP.png[A screenshot of adding region and VPC fo
 +
 image:screenshot_add_fsx_route_table.png[A screenshot of selecting a route table for FSx for ONTAP]
 
-. Accept the default AWS master key or click *Change Key* to select a different AWS Customer Master Key (CMK). For more information on CMK, see link:https://docs.netapp.com/us-en/occm/task-setting-up-kms.html[Setting up the AWS KMS]. Click *Next* to continue.
+. Accept the default AWS master key or click *Change Key* to select a different AWS Customer Master Key (CMK). For more information on CMK, see https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/https://docs.netapp.com/us-en/occm/task-setting-up-kms.html[Setting up the AWS KMS^]. Click *Next* to continue.
 +
 image:screenshot_add_fsx_encryption.png[A screenshot of setting the default master key for FSx for ONTAP]
 

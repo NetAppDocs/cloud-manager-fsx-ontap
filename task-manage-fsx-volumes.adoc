@@ -25,7 +25,7 @@ You can create iSCSI volumes using ONTAP CLI, ONTAP API, or Cloud Manager API an
 
 You need:
 
-* An active link:task-creating-connectors-aws.html[Connector in AWS].
+* An active https://docs.netapp.com/us-en/cloud-manager-connector/task-creating-connectors-aws.html[Connector in AWS^].
 
 * If you want to use SMB, you must have set up DNS and Active Directory. For more information on DNS and Active Directory network configuration, see link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/self-manage-prereqs.html[AWS: Prerequisites for using a self-managed Microsoft AD^].
 
@@ -184,9 +184,9 @@ Change the tiering policy for the volume.
 
 == Replicate and sync data
 
-You can replicate data between storage environments using Cloud Manager. To configure FSx for ONTAP replication, see link:https://docs.netapp.com/us-en/occm/task-replicating-data.html[replicating data between systems^].
+You can replicate data between storage environments using Cloud Manager. To configure FSx for ONTAP replication, see https://docs.netapp.com/us-en/cloud-manager-replication/https://docs.netapp.com/us-en/occm/task-replicating-data.html[replicating data between systems^].
 
-You can create sync relationships using Cloud Sync in Cloud Manager. To configure sync relationships, see link:https://docs.netapp.com/us-en/occm/task-sync-quick-start.html[create sync relationships^].
+You can create sync relationships using Cloud Sync in Cloud Manager. To configure sync relationships, see https://docs.netapp.com/us-en/cloud-manager-sync/https://docs.netapp.com/us-en/occm/task-sync-quick-start.html[create sync relationships^].
 
 //TIP: Drag-and-drop sync is not available in FSx for ONTAP at this time. You can manually configure sync relationships using the *Sync* menu.
 

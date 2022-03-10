@@ -152,5 +152,5 @@ You can now use the credentials when creating an FSx for ONTAP working environme
 
 == Related links
 
-* link:concept-accounts-aws.html[AWS credentials and permissions]
-* link:task-adding-aws-accounts.html[Managing AWS credentials for Cloud Manager]
+* https://docs.netapp.com/us-en/cloud-manager-get-started/concept-accounts-aws.html[AWS credentials and permissions^]
+* https://docs.netapp.com/us-en/cloud-manager-get-started/task-adding-aws-accounts.html[Managing AWS credentials for Cloud Manager^]
