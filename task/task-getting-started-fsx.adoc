@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-getting-started-fsx.html
+permalink: task/task-getting-started-fsx.html
 keywords: amazon fsx for ontap, fsx, netapp, data fabric, hybrid cloud, cloud, public cloud, networking, vpc, quick, getting started, install, installing, deploy, deploying, setup, setting up, launching, requirements, prerequisites, cloud central, get started, network, vpn, tier, tiering, storage tier, data tier, granting, permissions, policy, iam policy, policies, attach, iam user, access key, secret key, keys, sign up, cloud manager, create
 summary: Get started with Amazon FSx for ONTAP in a few steps.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-manage-fsx-volumes.html
+permalink: task/task-manage-fsx-volumes.html
 keywords: fsx for ontap, fsx, aws, delete volumes, delete nfs volumes, delete cifs volumes, tiering policy, mount path, get mount path, mount volume, delete volumes, snapshots, edit volume, clone volume, clone
 summary: You can manage volumes, clones, and snapshots, and change tiering policies for FSx for ONTAP using Cloud Manager.
 ---

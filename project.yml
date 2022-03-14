@@ -49,7 +49,7 @@ homepage:
         - title: Quick start
           url: /task/task-getting-started.html
         - title: Security group rules for FSx for ONTAP
-          url: /reference_security_groups_fsx.html
+          url: /reference/reference_security_groups_fsx.html
     - title: Create a working environment
       links:
         - title: Set up permissions
