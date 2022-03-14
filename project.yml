@@ -47,13 +47,13 @@ homepage:
         - title: Learn about Amazon FSx for ONTAP
           url: /concept-fsx-aws.html
         - title: Quick start
-          url: /task/task-getting-started.html
+          url: /task/task-getting-started-fsx.html
         - title: Security group rules for FSx for ONTAP
           url: /reference/reference_security_groups_fsx.html
     - title: Create a working environment
       links:
         - title: Set up permissions
-          url: /task/task-setting-up-permissions.html
+          url: /task/task-setting-up-permissions-fsx.html
         - title: Create a working environment
           url: /task/task-creating-fsx-working-environment.html
     - title: Create and manage volumes
