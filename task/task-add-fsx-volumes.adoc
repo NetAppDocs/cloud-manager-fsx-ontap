@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task/task-manage-fsx-volumes.html
+permalink: task/task-add-fsx-volumes.html
 keywords: fsx for ontap, fsx, aws, create volumes, create nfs volumes, delete nfs volumes, cifs volumes, iscsi, mount volume, delete working environment
 summary: After you set up your working environment, you can create and manage Amazon FSx for ONTAP volumes, clones and snapshots, change tiering policies, and remove or delete FSx for ONTAP.
 ---

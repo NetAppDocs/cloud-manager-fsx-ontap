@@ -43,7 +43,7 @@ homepage:
     - title: Get started with Amazon FSx for ONTAP
       links:
         - title: What's new
-          url: whats-new.html
+          url: /whats-new.html
         - title: Learn about Amazon FSx for ONTAP
           url: /concept-fsx-aws.html
         - title: Quick start
@@ -60,7 +60,7 @@ homepage:
       links:
         - title: Create volumes
           url: /task/task-add-fsx-volumes.html
-        - title: Manae volumes
+        - title: Manage volumes
           url: /task/task-manage-fsx-volumes.html
     - title: Knowledge and support
       links:
