@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: whats-new.html
 keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes
-summary: Learn what's new in <service>.
+summary: Learn what's new in Amazon FSx for ONTAP.
 ---
 
-= What's new with <service>
+= What's new with Amazon FSx for ONTAP
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,46 +13,51 @@ summary: Learn what's new in <service>.
 :imagesdir: ./media/
 
 [.lead]
-Learn what's new in <service>.
+Learn what's new in Amazon FSx for ONTAP.
 
-tag::whats-new[]
-== <date of release in the format dd month year like 28 Nov 2021>
+//tag::whats-new[]
+== 27 February 2022
 
-=== <feature title>
+=== Assume IAM role
 
-<description>
+When you create an FSx for ONTAP working environment, you now must provide the ARN of an IAM role that Cloud Manager can assume to create an FSx for ONTAP working environment. You previously needed to provide AWS access keys.
 
-=== <feature title>
+link:/task/task_setting_up_permissions_fsx.html[Learn how to set up permissions for FSx for ONTAP].
 
-<description>
+== 31 October 2021
 
-== <date of release in the format dd month year like 28 Nov 2021>
+=== Create iSCSI volumes using Cloud Manager API
 
-=== <feature title>
+You can create iSCSI volumes for FSx for ONTAP using the Cloud Manager API and manage them in your working environment.
 
-<description>
+=== Select volume units when creating volumes
 
-=== <feature title>
+You can link:/task/task_add_fsx_volumes.html#creating-volumes[select volume units (GiB or TiB) when creating volumes] in FSx for ONTAP.
 
-<description>
+== 4 October 2021
 
-== <date of release in the format dd month year like 28 Nov 2021>
+=== Create CIFS volumes using Cloud Manager
 
-=== <feature title>
+Now you can link:/task/task_add_fsx_volumes.html#creating-volumes[create CIFS volumes in FSx for ONTAP using Cloud Manager].
 
-<description>
+=== Edit volumes using Cloud Manager
 
-=== <feature title>
+Now you can link:/task/task_manage_fsx_volumes.html#editing-volumes[edit FSx for ONTAP volumes using Cloud Manager].
 
-<description>
-end::whats-new[]
+//end::whats-new[]
 
-== <date of release in the format dd month year like 28 Nov 2021>
+== 2 September 2021
 
-=== <feature title>
+=== Support for Amazon FSx for ONTAP
 
-<description>
+* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html[Amazon FSx for ONTAP] is a fully managed service allowing customers to launch and run file systems powered by NetApp’s ONTAP storage operating system. FSx for ONTAP provides the same features, performance, and administrative capabilities NetApp customers use on premises, with the simplicity, agility, security, and scalability of a native AWS service.
++
+link:concept_fsx_aws.html[Learn about Amazon FSx for ONTAP].
 
-=== <feature title>
+* You can configure an FSx for ONTAP working environment in Cloud Manager.
++
+link:/task/task_creating_fsx_working_environment.html[Create an Amazon FSx for ONTAP working environment].
 
-<description>
+* Using a Connector in AWS and Cloud Manager, you can create and manage volumes, replicate data, and integrate FSx for ONTAP with NetApp cloud services, such as Data Sense and Cloud Sync.
++
+link:task_scanning_fsx.html#quick-start[Get started with Cloud Data Sense for Amazon FSx for ONTAP].
