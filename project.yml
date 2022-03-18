@@ -59,11 +59,11 @@ homepage:
         - title: Quick start
           url: /start/task-getting-started-fsx.html
     - title: Requirements
-      entries:
-        - title: Set up permissions for FSx for ONTAP
-          url: /start/task-setting-up-permissions-fsx.html
-        - title: Security group rules for FSx for ONTAP
-          url: /start/reference_security_groups_fsx.html
+      links:
+         - title: Set up permissions for FSx for ONTAP
+           url: /start/task-setting-up-permissions-fsx.html
+         - title: Security group rules for FSx for ONTAP
+           url: /start/reference_security_groups_fsx.html
     - title: Use Amazon FSx for ONTAP
       links:
         - title: Create and manage the working environment
