@@ -58,13 +58,11 @@ homepage:
           url: /start/reference_security_groups_fsx.html
     - title: Use Amazon FSx for ONTAP
       links:
-        - title: Set up permissions
-          url: /use/task-setting-up-permissions-fsx.html
-        - title: Create a working environment
+        - title: Create and manage the working environment
           url: /use/task-creating-fsx-working-environment.html
-        - title: Create volumes
+        - title: Create and mount volumes
           url: /use/task-add-fsx-volumes.html
-        - title: Manage volumes
+        - title: Manage volumes and data services
           url: /use/task-manage-fsx-volumes.html
     - title: Knowledge and support
       links:
