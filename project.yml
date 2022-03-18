@@ -1,10 +1,14 @@
 settings:
   name: "Amazon FSx for ONTAP"
+  platform: cloud
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
 sidebar:
+  product-family:
+    name: Cloud Manager
+    repo: cloud-manager-family
   entries:
     - title: Back to Cloud Manager documentation
       url: https://docs.netapp.com/us-en/cloud-manager-family
