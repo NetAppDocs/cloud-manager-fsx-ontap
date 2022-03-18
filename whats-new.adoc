@@ -15,7 +15,7 @@ summary: Learn what's new in Amazon FSx for ONTAP.
 [.lead]
 Learn what's new in Amazon FSx for ONTAP.
 
-tag::whats-new[]
+//tag::whats-new[]
 == 27 February 2022
 
 === Assume IAM role
@@ -44,7 +44,7 @@ Now you can link:/task/task_add_fsx_volumes.html#creating-volumes[create CIFS vo
 
 Now you can link:/task/task_manage_fsx_volumes.html#editing-volumes[edit FSx for ONTAP volumes using Cloud Manager].
 
-end::whats-new[]
+//end::whats-new[]
 
 == 2 September 2021
 

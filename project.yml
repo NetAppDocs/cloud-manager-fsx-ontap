@@ -15,27 +15,27 @@ sidebar:
     - title: Get started
       entries:
         - title: Learn about FSx for ONTAP
-          url: /concept-fsx-aws.html
+          url: /start/concept-fsx-aws.html
         - title: Quick start
-          url: /task/task-getting-started-fsx.html
+          url: /start/task-getting-started-fsx.html
         - title: Set up permissions for FSx for ONTAP
-          url: /task/task-setting-up-permissions-fsx.html
+          url: /start/task-setting-up-permissions-fsx.html
         - title: Security group rules for FSx for ONTAP
-          url: /reference/reference_security_groups_fsx.html
+          url: /start/reference_security_groups_fsx.html
     - title: Use Amazon FSx for ONTAP
       entries:
         - title: Create and manage a working environment
-          url: /task/task-creating-fsx-working-environment.html
+          url: /use/task-creating-fsx-working-environment.html
         - title: Create and mount volumes
-          url: /task/task-add-fsx-volumes.html
+          url: /use/task-add-fsx-volumes.html
         - title: Manage volumes and data services
-          url: /task/task-manage-fsx-volumes.html
+          url: /use/task-manage-fsx-volumes.html
     - title: Knowledge and support
       entries:
         - title: Register for support
-          url: /task/task-support-registration.html
+          url: /support/task-support-registration.html
         - title: Get help
-          url: /task/task-get-help.html
+          url: /support/task-get-help.html
     - title: Legal notices
       url: /legal-notices.html
 homepage:
@@ -45,29 +45,31 @@ homepage:
         - title: What's new
           url: /whats-new.html
         - title: Learn about Amazon FSx for ONTAP
-          url: /concept-fsx-aws.html
+          url: /start/concept-fsx-aws.html
         - title: Quick start
-          url: /task/task-getting-started-fsx.html
+          url: /start/task-getting-started-fsx.html
+        - title: Set up permissions for FSx for ONTAP
+          url: /start/task-setting-up-permissions-fsx.html
         - title: Security group rules for FSx for ONTAP
-          url: /reference/reference_security_groups_fsx.html
+          url: /start/reference_security_groups_fsx.html
     - title: Create a working environment
       links:
         - title: Set up permissions
-          url: /task/task-setting-up-permissions-fsx.html
+          url: /use/task-setting-up-permissions-fsx.html
         - title: Create a working environment
-          url: /task/task-creating-fsx-working-environment.html
+          url: /use/task-creating-fsx-working-environment.html
     - title: Create and manage volumes
       links:
         - title: Create volumes
-          url: /task/task-add-fsx-volumes.html
+          url: /use/task-add-fsx-volumes.html
         - title: Manage volumes
-          url: /task/task-manage-fsx-volumes.html
+          url: /use/task-manage-fsx-volumes.html
     - title: Knowledge and support
       links:
         - title: Register for support
-          url: /task/task-support-registration.html
+          url: /support/task-support-registration.html
         - title: Get help
-          url: /task/task-get-help.html
+          url: /support/task-get-help.html
     - title: Blogs & community
       links:
         - title: NetApp Community

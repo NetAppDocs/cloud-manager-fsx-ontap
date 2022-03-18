@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: concept-fsx-aws.html
+permalink: start/concept-fsx-aws.html
 keywords: amazon fsx for ontap, volumes, aws, access key, secret key
 summary: Amazon FSx for ONTAP is a fully managed service allowing customers to launch and run file systems powered by NetApp’s ONTAP storage operating system. FSx for ONTAP provides the same features, performance, and administrative capabilities NetApp customers use on premises today, with the simplicity, agility, security, and scalability of a native AWS service.
 ---
