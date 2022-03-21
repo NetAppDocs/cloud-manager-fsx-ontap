@@ -35,13 +35,13 @@ You need:
 
 . If you don't have a Connector enabled, you'll be prompted to add one.
 +
-image:screenshot_fsx_connector_prompt.png[A screenshot of the FSx for ONTAP Connector prompt.]
+image:/media/screenshot_fsx_connector_prompt.png[A screenshot of the FSx for ONTAP Connector prompt.]
 
 . Click the *Volumes* tab
 
 . Click *Add Volume*.
 +
-image:screenshot_fsx_volume_new.png[A screenshot of the FSx for ONTAP volume tab.]
+image:/media/screenshot_fsx_volume_new.png[A screenshot of the FSx for ONTAP volume tab.]
 
 . *Volume Details and Protection*:
 
@@ -52,7 +52,7 @@ image:screenshot_fsx_volume_new.png[A screenshot of the FSx for ONTAP volume tab
 
 .. Click *Next*.
 +
-image:screenshot_fsx_volume_details.png[A screenshot of the volume details and protection fields for FSx for ONTAP volume creation.]
+image:/media/screenshot_fsx_volume_details.png[A screenshot of the volume details and protection fields for FSx for ONTAP volume creation.]
 
 . *Protocol*: Select the an NFS or CIFS volume protocol.
 .. For NFS:
@@ -60,13 +60,13 @@ image:screenshot_fsx_volume_details.png[A screenshot of the volume details and p
 * Select the NFS versions.
 * Select a Custom Export Policy. Click the information icon for valid value criteria.
 +
-image:screenshot_fsx_volume_protocol_nfs.png[A screenshot of the NFS configuration FSx for ONTAP volume creation.]
+image:/media/screenshot_fsx_volume_protocol_nfs.png[A screenshot of the NFS configuration FSx for ONTAP volume creation.]
 .. For CIFS:
 * Enter a Share Name.
 * Enter users or groups separated by a semicolon.
 * Select the permission level for the volume.
 +
-image:screenshot_fsx_volume_protocol_cifs.png[A screenshot of the NFS configuration FSx for ONTAP volume creation.]
+image:/media/screenshot_fsx_volume_protocol_cifs.png[A screenshot of the NFS configuration FSx for ONTAP volume creation.]
 +
 TIP: If this is the first CIFS volume for this working environment, you will be prompted to configure CIFS connectivity using an _Active Directory_ or _Workgroup_ setup.
 
@@ -87,7 +87,6 @@ The listed DNS server must contain the service location records (SRV) needed to 
 | CIFS server NetBIOS name | A CIFS server name that is unique in the AD domain.
 
 | Organizational Unit | The organizational unit within the AD domain to associate with the CIFS server. The default is CN=Computers.
-// If you configure AWS Managed Microsoft AD as the AD server for Cloud Volumes ONTAP, you should enter *OU=Computers,OU=corp* in this field.
 
 | DNS Domain | The DNS domain for the storage virtual machine (SVM). In most cases, the domain is the same as the AD domain.
 
@@ -104,7 +103,7 @@ The listed DNS server must contain the service location records (SRV) needed to 
 .. By default, *Tiering Policy* is set to *Snapshot Only*. You can select a different tiering policy based on your needs.
 .. Click *Next*.
 +
-image:screenshot_fsx_volume_usage_tiering.png[A screenshot of the Usage Profile and Tiering Configuration for FSx for ONTAP volume creation.]
+image:/media/screenshot_fsx_volume_usage_tiering.png[A screenshot of the Usage Profile and Tiering Configuration for FSx for ONTAP volume creation.]
 
 . *Review*: Review your volume configuration. Click *Previous* to change settings or click *Add* to create the volume.
 
@@ -123,6 +122,6 @@ Access mounting instructions from within Cloud Manager so you can mount the volu
 
 . Open the volume menu and select *Mount the volume*.
 +
-image:screenshot_fsx_volume_actions.png[A screenshot of available operations available when you open the volume menu.]
+image:/media/screenshot_fsx_volume_actions.png[A screenshot of available operations available when you open the volume menu.]
 
 . Follow the instructions to mount the volume.

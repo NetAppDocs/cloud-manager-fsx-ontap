@@ -33,17 +33,17 @@ Before creating your FSx for ONTAP working environment in Cloud Manager, you wil
 
 . Select *Amazon FSx for ONTAP* and click *Next*.
 +
-image:screenshot_add_fsx_working_env.png[A screenshot of adding a working environment for Amazon FSx for ONTAP]
+image:/media/screenshot_add_fsx_working_env.png[A screenshot of adding a working environment for Amazon FSx for ONTAP]
 
 . Authenticate FSx for ONTAP in Cloud Manager.
 
 .. If there is an existing IAM role in your account with the correct AWS permissions for FSx for ONTAP, select it from the dropdown.
 +
-image:screenshot-fsx-assume-role-present.png[A screenshot showing dropdown for AWS roles]
+image:/media/screenshot-fsx-assume-role-present.png[A screenshot showing dropdown for AWS roles]
 
 .. If there is no IAM role in your account, click *Credentials Page* and follow the steps in the wizard to add an ARN for an AWS IAM role with FSx for ONTAP credentials. See link:task-setting-up-permissions-fsx.html[adding AWS credentials to Cloud Manager] for details.
 +
-image:screenshot-fsx-assume-role-not-present.png[A screenshot of the steps to add the ARN for an AWS IAM role with FSx for ONTAP permission.]
+image:/media/screenshot-fsx-assume-role-not-present.png[A screenshot of the steps to add the ARN for an AWS IAM role with FSx for ONTAP permission.]
 
 . Provide information about your FSx for ONTAP instance:
 
@@ -53,7 +53,7 @@ image:screenshot-fsx-assume-role-not-present.png[A screenshot of the steps to ad
 .. Select the option to use the same password for your SVM user or set a different password.
 .. Click *Next*.
 +
-image:screenshot_add_fsx_credentials.png[A screenshot of adding credentials for FSx for ONTAP]
+image:/media/screenshot_add_fsx_credentials.png[A screenshot of adding credentials for FSx for ONTAP]
 
 . Provide region and VPC information:
 
@@ -62,19 +62,19 @@ image:screenshot_add_fsx_credentials.png[A screenshot of adding credentials for 
 .. Select an Availability Zone and subnet for each node.
 .. Click *Next*.
 +
-image:screenshot_add_fsx_region.png[A screenshot of adding region and VPC for FSx for ONTAP]
+image:/media/screenshot_add_fsx_region.png[A screenshot of adding region and VPC for FSx for ONTAP]
 
 . Leave _CIDR Range_ empty and click *Next* to automatically set an available range. Optionally, you can use https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-transit-gateway.html[AWS Transit Gateway^] to manually configure a range.
 +
-image:screenshot_add_fsx_floatingIP.png[A screenshot of adding region and VPC for FSx for ONTAP]
+image:/media/screenshot_add_fsx_floatingIP.png[A screenshot of adding region and VPC for FSx for ONTAP]
 
 . Select route tables that include routes to the floating IP addresses. If you have just one route table for the subnets in your VPC (the main route table), Cloud Manager automatically adds the floating IP addresses to that route table. Click *Next* to continue.
 +
-image:screenshot_add_fsx_route_table.png[A screenshot of selecting a route table for FSx for ONTAP]
+image:/media/screenshot_add_fsx_route_table.png[A screenshot of selecting a route table for FSx for ONTAP]
 
 . Accept the default AWS master key or click *Change Key* to select a different AWS Customer Master Key (CMK). For more information on CMK, see https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/https://docs.netapp.com/us-en/occm/task-setting-up-kms.html[Setting up the AWS KMS^]. Click *Next* to continue.
 +
-image:screenshot_add_fsx_encryption.png[A screenshot of setting the default master key for FSx for ONTAP]
+image:/media/screenshot_add_fsx_encryption.png[A screenshot of setting the default master key for FSx for ONTAP]
 
 . Configure your storage:
 
@@ -82,10 +82,10 @@ image:screenshot_add_fsx_encryption.png[A screenshot of setting the default mast
 .. You can optionally specify an IOPS value. If you don't specify an IOPS value, Cloud Manager will set a default value based on 3 IOPS per GiB of the total capacity entered. For example, if you enter 2000 GiB for the total capacity and no value for the IOPS, the effective IOPS value will be set to 6000.
 +
 WARNING: If you specify an IOPS value that does not meet the minimum requirements, you'll receive an error when adding the working environment.
-image:screenshot_fsx_working_environment_failed_iops.png[A screenshot of error message if incorrect IOPS value is set.]
+image:/media/screenshot_fsx_working_environment_failed_iops.png[A screenshot of error message if incorrect IOPS value is set.]
 
 .. Click *Next*.
-image:screenshot_add_fsx_storage_config.png[A screenshot of setting storage configuration for FSx for ONTAP]
+image:/media/screenshot_add_fsx_storage_config.png[A screenshot of setting storage configuration for FSx for ONTAP]
 
 . Review your configuration:
 
@@ -93,13 +93,13 @@ image:screenshot_add_fsx_storage_config.png[A screenshot of setting storage conf
 .. Click *Previous* to make changes to any settings.
 .. Click *Add* to accept the settings and create your Working Environment.
 +
-image:screenshot_add_fsx_review.png[A screenshot of reviewing the settings for FSx for ONTAP]
+image:/media/screenshot_add_fsx_review.png[A screenshot of reviewing the settings for FSx for ONTAP]
 
 .Result
 
 Cloud Manager displays your FSx for ONTAP configuration on the Canvas page.
 
-image:screenshot_add_fsx_cloud.png[A screenshot of Amazon FSx for ONTAP on the working environments page.]
+image:/media/screenshot_add_fsx_cloud.png[A screenshot of Amazon FSx for ONTAP on the working environments page.]
 
 You can now add volumes to your FSx for ONTAP working environment using Cloud Manager.
 
@@ -113,13 +113,13 @@ If you created an FSx for ONTAP file system using the AWS Management Console or 
 
 . Select *Amazon FSx for ONTAP* and click *Click Here*.
 +
-image:screenshot_fsx_working_environment_discover.png[A screenshot of discovering a working environment for Amazon FSx for ONTAP]
+image:/media/screenshot_fsx_working_environment_discover.png[A screenshot of discovering a working environment for Amazon FSx for ONTAP]
 
 . Select existing credentials or create new credentials. Click *Next*.
 
 . Select the AWS region and the working environment you want to add.
 +
-image:screenshot_fsx_working_environment_select.png[A screenshot of selecting the AWS region and working environment]
+image:/media/screenshot_fsx_working_environment_select.png[A screenshot of selecting the AWS region and working environment]
 
 . Click *Add*.
 
@@ -137,7 +137,7 @@ You can remove FSx for ONTAP from Cloud Manager without deleting your FSx for ON
 
 . At the top right of the page, select the actions menu and click *Remove from workspace*.
 +
-image:screenshot_fsx_working_environment_remove.png[A screenshot of remove option for FSx for ONTAP from the Cloud Manager interface.]
+image:/media/screenshot_fsx_working_environment_remove.png[A screenshot of remove option for FSx for ONTAP from the Cloud Manager interface.]
 
 . Click *Remove* to remove FSx for ONTAP from Cloud Manager.
 
@@ -161,6 +161,6 @@ WARNING: This action will delete all resources associated with the working envir
 
 . At the top right of the page, select the actions menu and click *Delete*.
 +
-image:screenshot_fsx_working_environment_delete.png[A screenshot of delete option for FSx for ONTAP from the Cloud Manager interface.]
+image:/media/screenshot_fsx_working_environment_delete.png[A screenshot of delete option for FSx for ONTAP from the Cloud Manager interface.]
 
 . Enter the name of the working environment and click *Delete*.
