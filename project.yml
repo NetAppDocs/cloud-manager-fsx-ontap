@@ -25,9 +25,9 @@ sidebar:
     - title: Requirements
       entries:
         - title: Set up permissions for FSx for ONTAP
-          url: /start/task-setting-up-permissions-fsx.html
+          url: /requirements/task-setting-up-permissions-fsx.html
         - title: Security group rules for FSx for ONTAP
-          url: /start/reference_security_groups_fsx.html
+          url: /requirements/reference_security_groups_fsx.html
     - title: Use Amazon FSx for ONTAP
       entries:
         - title: Create and manage a working environment
@@ -57,9 +57,9 @@ homepage:
     - title: Requirements
       links:
          - title: Set up permissions for FSx for ONTAP
-           url: /start/task-setting-up-permissions-fsx.html
+           url: /requirements/task-setting-up-permissions-fsx.html
          - title: Security group rules for FSx for ONTAP
-           url: /start/reference_security_groups_fsx.html
+           url: /requirements/reference_security_groups_fsx.html
     - title: Use Amazon FSx for ONTAP
       links:
         - title: Create and manage the working environment
