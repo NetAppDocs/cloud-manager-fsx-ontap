@@ -10,7 +10,7 @@ summary: After you set up your working environment, you can create and manage Am
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 After you set up your working environment, you can create and mount FSx for ONTAP volumes.
@@ -35,13 +35,13 @@ You need:
 
 . If you don't have a Connector enabled, you'll be prompted to add one.
 +
-image:/media/screenshot_fsx_connector_prompt.png[A screenshot of the FSx for ONTAP Connector prompt.]
+image:screenshot_fsx_connector_prompt.png[A screenshot of the FSx for ONTAP Connector prompt.]
 
 . Click the *Volumes* tab
 
 . Click *Add Volume*.
 +
-image:/media/screenshot_fsx_volume_new.png[A screenshot of the FSx for ONTAP volume tab.]
+image:screenshot_fsx_volume_new.png[A screenshot of the FSx for ONTAP volume tab.]
 
 . *Volume Details and Protection*:
 
@@ -52,7 +52,7 @@ image:/media/screenshot_fsx_volume_new.png[A screenshot of the FSx for ONTAP vol
 
 .. Click *Next*.
 +
-image:/media/screenshot_fsx_volume_details.png[A screenshot of the volume details and protection fields for FSx for ONTAP volume creation.]
+image:screenshot_fsx_volume_details.png[A screenshot of the volume details and protection fields for FSx for ONTAP volume creation.]
 
 . *Protocol*: Select the an NFS or CIFS volume protocol.
 .. For NFS:
@@ -60,13 +60,13 @@ image:/media/screenshot_fsx_volume_details.png[A screenshot of the volume detail
 * Select the NFS versions.
 * Select a Custom Export Policy. Click the information icon for valid value criteria.
 +
-image:/media/screenshot_fsx_volume_protocol_nfs.png[A screenshot of the NFS configuration FSx for ONTAP volume creation.]
+image:screenshot_fsx_volume_protocol_nfs.png[A screenshot of the NFS configuration FSx for ONTAP volume creation.]
 .. For CIFS:
 * Enter a Share Name.
 * Enter users or groups separated by a semicolon.
 * Select the permission level for the volume.
 +
-image:/media/screenshot_fsx_volume_protocol_cifs.png[A screenshot of the NFS configuration FSx for ONTAP volume creation.]
+image:screenshot_fsx_volume_protocol_cifs.png[A screenshot of the NFS configuration FSx for ONTAP volume creation.]
 +
 TIP: If this is the first CIFS volume for this working environment, you will be prompted to configure CIFS connectivity using an _Active Directory_ or _Workgroup_ setup.
 
@@ -103,7 +103,7 @@ The listed DNS server must contain the service location records (SRV) needed to 
 .. By default, *Tiering Policy* is set to *Snapshot Only*. You can select a different tiering policy based on your needs.
 .. Click *Next*.
 +
-image:/media/screenshot_fsx_volume_usage_tiering.png[A screenshot of the Usage Profile and Tiering Configuration for FSx for ONTAP volume creation.]
+image:screenshot_fsx_volume_usage_tiering.png[A screenshot of the Usage Profile and Tiering Configuration for FSx for ONTAP volume creation.]
 
 . *Review*: Review your volume configuration. Click *Previous* to change settings or click *Add* to create the volume.
 
@@ -122,6 +122,6 @@ Access mounting instructions from within Cloud Manager so you can mount the volu
 
 . Open the volume menu and select *Mount the volume*.
 +
-image:/media/screenshot_fsx_volume_actions.png[A screenshot of available operations available when you open the volume menu.]
+image:screenshot_fsx_volume_actions.png[A screenshot of available operations available when you open the volume menu.]
 
 . Follow the instructions to mount the volume.
