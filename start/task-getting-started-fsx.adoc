@@ -10,7 +10,7 @@ summary: Get started with Amazon FSx for ONTAP in a few steps.
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Get started with Amazon FSx for ONTAP in a few steps.
