@@ -1,0 +1,95 @@
+---
+sidebar: sidebar
+permalink: use/task-manage-fsx-volumes.html
+keywords: fsx for ontap, fsx, aws, delete volumes, delete nfs volumes, delete cifs volumes, tiering policy, mount path, get mount path, mount volume, delete volumes, snapshots, edit volume, clone volume, clone
+summary: You can manage volumes, clones, and snapshots, and change tiering policies for FSx for ONTAP using Cloud Manager.
+---
+
+= Manage volumes for Amazon FSx for ONTAP
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+You can manage volumes, clones, and snapshots, and change tiering policies for FSx for ONTAP using Cloud Manager.
+
+== Edit volumes
+
+After you create a volume, you can modify it at any time.
+
+.Steps
+
+. Open the working environment.
+
+. Open the volume menu and select *Edit*.
+.. For NFS, you can modify the size and tags.
+.. For CIFS, you can modify the share name, users, permissions, and Snapshot policy as needed.
+
+. Click *Apply*.
+
+== Clone volumes
+
+After you create a volume, you can create a new read-write volume from a new Snapshot.
+
+.Steps
+
+. Open the working environment.
+
+. Open the volume menu and select *Clone*.
+
+. Enter a name for the cloned volume.
+
+. Click *Clone*.
+
+== Manage Snapshot copies
+
+Snapshot copies provide a point-in-time copy of your volume. Create Snapshot copies and restore the data to a new volume.
+
+.Steps
+
+. Open the working environment.
+
+. Open the volume menu and choose one of the available options to manage Snapshot copies:
+
+* *Create a Snapshot copy*
+* *Restore from a Snapshot copy*
+
+. Follow the prompts to complete the selected action.
+
+== Change the tiering policy
+
+Change the tiering policy for the volume.
+
+.Steps
+
+. Open the working environment.
+
+. Open the volume menu and select *Change Tiering policy*.
+
+. Select a new volume tiering policy and click *Change*.
+
+== Replicate and sync data
+
+You can replicate data between storage environments using Cloud Manager. To configure FSx for ONTAP replication, see https://docs.netapp.com/us-en/cloud-manager-replication/https://docs.netapp.com/us-en/occm/task-replicating-data.html[replicating data between systems^].
+
+You can create sync relationships using Cloud Sync in Cloud Manager. To configure sync relationships, see https://docs.netapp.com/us-en/cloud-manager-sync/https://docs.netapp.com/us-en/occm/task-sync-quick-start.html[create sync relationships^].
+
+== Delete volumes
+
+Delete the volumes that you no longer need.
+
+.Before you begin
+
+You cannot delete a volume that was previously part of a SnapMirror relationship using Cloud Manager. SnapMirror volumes must be deleted using the AWS Management Console or CLI.
+
+.Steps
+
+. Open the working environment.
+
+. Open the volume menu and select *Delete*.
+
+. Enter the working environment name and confirm that you want to delete the volume. It can take up to an hour before the volume is completely removed from Cloud Manager.
+
+NOTE: If you try to delete a cloned volume, you will receive an error.
