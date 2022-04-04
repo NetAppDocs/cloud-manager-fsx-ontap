@@ -25,7 +25,7 @@ You must create an Amazon FSx for ONTAP working environment before adding volume
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Create a Connector
 
 [role="quick-margin-para"]
-You must have a https://docs.netapp.com/us-en/cloud-manager-connector/task-creating-connectors-aws.html[Connector for AWS^] to open the FSx for ONTAP working environment, create volumes, or perform other actions. When a Connector is required, Cloud Manager will prompt you if one is not already added.
+You must have a https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html[Connector for AWS^] to open the FSx for ONTAP working environment, create volumes, or perform other actions. When a Connector is required, Cloud Manager will prompt you if one is not already added.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Add volumes
 
@@ -39,6 +39,6 @@ Use Cloud Manager to manage your volumes and configure additional services such 
 
 .Related links
 
-* https://docs.netapp.com/us-en/cloud-manager-get-started/task-creating-connectors-aws.html[Creating a Connector from Cloud Manager^]
-* https://docs.netapp.com/us-en/cloud-manager-get-started/task-launching-aws-mktp.html[Launching a Connector from the AWS Marketplace^]
-* https://docs.netapp.com/us-en/cloud-manager-connector/task-installing-linux.html[Installing the Connector software on a Linux host^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html[Creating a Connector from Cloud Manager^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-aws-mktp.html[Launching a Connector from the AWS Marketplace^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html[Installing the Connector software on a Linux host^]

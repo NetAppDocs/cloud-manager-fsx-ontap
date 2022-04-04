@@ -25,7 +25,7 @@ You can create iSCSI volumes using ONTAP CLI, ONTAP API, or Cloud Manager API an
 
 You need:
 
-* An active https://docs.netapp.com/us-en/cloud-manager-connector/task-creating-connectors-aws.html[Connector in AWS^].
+* An active https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html[Connector in AWS^].
 
 * If you want to use SMB, you must have set up DNS and Active Directory. For more information on DNS and Active Directory network configuration, see link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/self-manage-prereqs.html[AWS: Prerequisites for using a self-managed Microsoft AD^].
 
