@@ -23,7 +23,7 @@ The first step is to create an FSx for ONTAP working environment. If you already
 
 Before creating your FSx for ONTAP working environment in Cloud Manager, you will need:
 
-* The ARN of an IAM role that gives Cloud Manager the permissions needed to create an FSx for ONTAP working environment. See link:task-setting-up-permissions-fsx.html[adding AWS credentials to Cloud Manager] for details.
+* The ARN of an IAM role that gives Cloud Manager the permissions needed to create an FSx for ONTAP working environment. See link:../requirements/task-setting-up-permissions-fsx.html[adding AWS credentials to Cloud Manager] for details.
 
 * The region and VPN information for where you will create the FSx for ONTAP instance.
 
@@ -41,7 +41,7 @@ image:screenshot_add_fsx_working_env.png[A screenshot of adding a working enviro
 +
 image:screenshot-fsx-assume-role-present.png[A screenshot showing dropdown for AWS roles]
 
-.. If there is no IAM role in your account, click *Credentials Page* and follow the steps in the wizard to add an ARN for an AWS IAM role with FSx for ONTAP credentials. See link:task-setting-up-permissions-fsx.html[adding AWS credentials to Cloud Manager] for details.
+.. If there is no IAM role in your account, click *Credentials Page* and follow the steps in the wizard to add an ARN for an AWS IAM role with FSx for ONTAP credentials. See link:../requirements/task-setting-up-permissions-fsx.html[adding AWS credentials to Cloud Manager] for details.
 +
 image:screenshot-fsx-assume-role-not-present.png[A screenshot of the steps to add the ARN for an AWS IAM role with FSx for ONTAP permission.]
 
