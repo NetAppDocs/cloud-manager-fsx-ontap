@@ -72,9 +72,9 @@ Change the tiering policy for the volume.
 
 == Replicate and sync data
 
-You can replicate data between storage environments using Cloud Manager. To configure FSx for ONTAP replication, see https://docs.netapp.com/us-en/cloud-manager-replication/https://docs.netapp.com/us-en/occm/task-replicating-data.html[replicating data between systems^].
+You can replicate data between storage environments using Cloud Manager. To configure FSx for ONTAP replication, see https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html[replicating data between systems^].
 
-You can create sync relationships using Cloud Sync in Cloud Manager. To configure sync relationships, see https://docs.netapp.com/us-en/cloud-manager-sync/https://docs.netapp.com/us-en/occm/task-sync-quick-start.html[create sync relationships^].
+You can create sync relationships using Cloud Sync in Cloud Manager. To configure sync relationships, see https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html[create sync relationships^].
 
 == Delete volumes
 
