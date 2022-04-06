@@ -23,8 +23,6 @@ sidebar:
           url: /start/concept-fsx-aws.html
         - title: Quick start
           url: /start/task-getting-started-fsx.html
-    - title: Requirements
-      entries:
         - title: Set up permissions for FSx for ONTAP
           url: /requirements/task-setting-up-permissions-fsx.html
         - title: Security group rules for FSx for ONTAP
@@ -58,12 +56,10 @@ homepage:
           url: /start/concept-fsx-aws.html
         - title: Quick start
           url: /start/task-getting-started-fsx.html
-    - title: Requirements
-      links:
-         - title: Set up permissions for FSx for ONTAP
-           url: /requirements/task-setting-up-permissions-fsx.html
-         - title: Security group rules for FSx for ONTAP
-           url: /requirements/reference-security-groups-fsx.html
+        - title: Set up permissions for FSx for ONTAP
+          url: /requirements/task-setting-up-permissions-fsx.html
+        - title: Security group rules for FSx for ONTAP
+          url: /requirements/reference-security-groups-fsx.html
     - title: Use Amazon FSx for ONTAP
       links:
         - title: Create and manage the working environment
