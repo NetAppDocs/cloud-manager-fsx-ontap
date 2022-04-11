@@ -595,7 +595,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-29 22:09:21 +0000">03/29/2022</time>
+    <time datetime="2022-04-11 15:47:12 +0000">04/11/2022</time>
     
   
 
@@ -624,13 +624,40 @@
 <h2 id="rules-for-fsx-for-ontap">Rules for FSx for ONTAP</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The security group for FSx for ONTAP requires both inbound and outbound rules.</p>
+<p>The FSx for ONTAP security group requires both inbound and outbound rules. This diagram illustrates FSx for ONTAP networking configuration and security group requirements.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../media/diagram-fsx-security-groups.png" alt="A diagram of FSx for ONTAP security group configuration."></span></p>
+</div>
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You need to locate the security groups associated with the ENIs using the AWS Management Console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Open the FSx for ONTAP file system in the AWS Management Console and click the file system ID link.</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-fsx-file-system-id.png" alt="A screenshot of the FSx file system ID in AWS Management Console."></span></p>
+</div>
+</li>
+<li>
+<p>On the <strong>Network &amp; security</strong> tab, click the network interface ID for the preferred or standby subnet.</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-fsx-eni-id.png" alt="A screenshot of the FSx for ONTAP ENI ID."></span></p>
+</div>
+</li>
+<li>
+<p>Click the security group in the network interface table or the <strong>Details</strong> section for the network interface.</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-fsx-security-group-id.png" alt="A screenshot of the FSx for ONTAP security group ID."></span></p>
+</div>
+</li>
+</ol>
 </div>
 <div class="sect2">
 <h3 id="inbound-rules">Inbound rules</h3>
-<div class="paragraph">
-<p>The source for inbound rules in the predefined security group is 0.0.0.0/0.</p>
-</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 10%;">
@@ -813,7 +840,7 @@
 <div class="sect3">
 <h4 id="advanced-outbound-rules">Advanced outbound rules</h4>
 <div class="paragraph">
-<p>If you need rigid rules for outbound traffic, you can use the following information to open only those ports that are required for outbound communication by FSx for ONTAP.</p>
+<p>You do not need to open specific ports for the mediator or between nodes in FSx for ONTAP.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -981,28 +1008,6 @@ The source is the interface (IP address) on the FSx for ONTAP system.
 <td class="tableblock halign-left valign-top"><p class="tableblock">Intercluster LIF</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Backup endpoint or restore endpoint</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Back up and restore operations for the Backup to S3 feature</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">Cluster</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">All traffic</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">All traffic</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">All LIFs on one node</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">All LIFs on the other node</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Intercluster communications (Cloud Volumes ONTAP HA only)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TCP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3000</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Node management LIF</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">HA mediator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ZAPI calls (Cloud Volumes ONTAP HA only)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ICMP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Node management LIF</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">HA mediator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Keep alive (Cloud Volumes ONTAP HA only)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DHCP</p></td>
@@ -1282,13 +1287,7 @@ The source IP address is the Connector host.
 <td class="tableblock halign-left valign-top"><p class="tableblock">API calls to AWS and ONTAP, and sending AutoSupport messages to NetApp</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">API calls</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TCP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3000</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP HA mediator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Communication with the ONTAP HA mediator</p></td>
-</tr>
-<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">API calls</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">TCP</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">8088</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Backup to S3</p></td>
