@@ -17,11 +17,27 @@ Cloud Manager creates AWS security groups that include the inbound and outbound 
 
 == Rules for FSx for ONTAP
 
-The security group for FSx for ONTAP requires both inbound and outbound rules.
+The FSx for ONTAP security group requires both inbound and outbound rules. This diagram illustrates FSx for ONTAP networking configuration and security group requirements.
+
+image:diagram-fsx-security-groups.png[A diagram of FSx for ONTAP security group configuration.]
+
+.Before you begin
+You need to locate the security groups associated with the ENIs using the AWS Management Console.
+
+.Steps
+. Open the FSx for ONTAP file system in the AWS Management Console and click the file system ID link.
++
+image:screenshot-fsx-file-system-id.png[A screenshot of the FSx file system ID in AWS Management Console.]
+
+. On the *Network & security* tab, click the network interface ID for the preferred or standby subnet.
++
+image:screenshot-fsx-eni-id.png[A screenshot of the FSx for ONTAP ENI ID.]
+
+. Click the security group in the network interface table or the *Details* section for the network interface.
++
+image:screenshot-fsx-security-group-id.png[A screenshot of the FSx for ONTAP security group ID.]
 
 === Inbound rules
-
-The source for inbound rules in the predefined security group is 0.0.0.0/0.
 
 [cols="10,10,80",width=100%,options="header"]
 |===
@@ -80,7 +96,7 @@ The predefined security group for FSx for ONTAP includes the following outbound 
 
 ==== Advanced outbound rules
 
-If you need rigid rules for outbound traffic, you can use the following information to open only those ports that are required for outbound communication by FSx for ONTAP.
+You do not need to open specific ports for the mediator or between nodes in FSx for ONTAP.
 
 NOTE: The source is the interface (IP address) on the FSx for ONTAP system.
 
@@ -113,9 +129,6 @@ NOTE: The source is the interface (IP address) on the FSx for ONTAP system.
 | UDP | 464 | Data LIF (NFS, CIFS) | Active Directory forest | Kerberos key administration
 | TCP | 749 | Data LIF (NFS, CIFS) | Active Directory forest | Kerberos V change & set password (RPCSEC_GSS)
 | Backup to S3 | TCP | 5010 | Intercluster LIF | Backup endpoint or restore endpoint | Back up and restore operations for the Backup to S3 feature
-.3+| Cluster | All traffic | All traffic | All LIFs on one node | All LIFs on the other node | Intercluster communications (Cloud Volumes ONTAP HA only)
-| TCP | 3000 | Node management LIF | HA mediator | ZAPI calls (Cloud Volumes ONTAP HA only)
-| ICMP | 1 | Node management LIF | HA mediator | Keep alive (Cloud Volumes ONTAP HA only)
 | DHCP | UDP | 68 | Node management LIF | DHCP | DHCP client for first-time setup
 | DHCPS | UDP | 67 | Node management LIF | DHCP | DHCP server
 | DNS | UDP | 53 | Node management LIF and data LIF (NFS, CIFS) | DNS | DNS
@@ -130,7 +143,6 @@ NOTE: The source is the interface (IP address) on the FSx for ONTAP system.
 | Syslog | UDP | 514 | Node management LIF | Syslog server | Syslog forward messages
 
 |===
-
 
 == Rules for the Connector
 
@@ -197,8 +209,7 @@ NOTE: The source IP address is the Connector host.
 | UDP	| 138 | Active Directory forest | NetBIOS datagram service
 | UDP	| 464 | Active Directory forest | Kerberos key administration
 | API calls and AutoSupport | HTTPS | 443 | Outbound internet and ONTAP cluster management LIF | API calls to AWS and ONTAP, and sending AutoSupport messages to NetApp
-.2+| API calls | TCP | 3000 | ONTAP HA mediator | Communication with the ONTAP HA mediator
-| TCP | 8088 | Backup to S3 | API calls to Backup to S3
+| API calls | TCP | 8088 | Backup to S3 | API calls to Backup to S3
 | DNS | UDP	| 53 | DNS | Used for DNS resolve by Cloud Manager
 | Cloud Data Sense | HTTP | 80 | Cloud Data Sense instance | Cloud Data Sense for Cloud Volumes ONTAP
 |===
