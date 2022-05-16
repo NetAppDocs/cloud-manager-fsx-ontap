@@ -50,15 +50,15 @@ homepage:
   tiles:
     - title: Get started
       links:
-        - title: What's new
+        - title: Release notes
           url: /whats-new.html
         - title: Learn about Amazon FSx for ONTAP
           url: /start/concept-fsx-aws.html
         - title: Quick start
           url: /start/task-getting-started-fsx.html
-        - title: Set up permissions for FSx for ONTAP
+        - title: Set up permissions
           url: /requirements/task-setting-up-permissions-fsx.html
-        - title: Security group rules for FSx for ONTAP
+        - title: Security group rules 
           url: /requirements/reference-security-groups-fsx.html
     - title: Use Amazon FSx for ONTAP
       links:
