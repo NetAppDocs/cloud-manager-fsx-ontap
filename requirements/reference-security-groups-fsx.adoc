@@ -47,8 +47,7 @@ image:screenshot-fsx-security-group-id.png[A screenshot of the FSx for ONTAP sec
 | Purpose
 
 | All ICMP | All | Pinging the instance
-| HTTP | 80 |	HTTP access to the System Manager web console using the IP address of the cluster management LIF
-| HTTPS |	443 |	HTTPS access to the System Manager web console using the IP address of the cluster management LIF
+| HTTPS |	443 | Access from the Connector to fsxadmin management LIF to send API calls to FSx
 | SSH |	22 | SSH access to the IP address of the cluster management LIF or a node management LIF
 | TCP |	111 |	Remote procedure call for NFS
 | TCP |	139 | NetBIOS service session for CIFS
