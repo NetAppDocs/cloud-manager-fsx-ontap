@@ -27,15 +27,15 @@ You need to locate the security groups associated with the ENIs using the AWS Ma
 .Steps
 . Open the FSx for ONTAP file system in the AWS Management Console and click the file system ID link.
 +
-image:screenshot-fsx-file-system-id.png[A screenshot of the FSx file system ID in AWS Management Console.]
+image:screenshot-fsx-file-system-id-zoom.png[A screenshot of the FSx file system ID in AWS Management Console.]
 
 . On the *Network & security* tab, click the network interface ID for the preferred or standby subnet.
 +
-image:screenshot-fsx-eni-id.png[A screenshot of the FSx for ONTAP ENI ID.]
+image:screenshot-fsx-eni-id-zoom.png[A screenshot of the FSx for ONTAP ENI ID.]
 
 . Click the security group in the network interface table or the *Details* section for the network interface.
 +
-image:screenshot-fsx-security-group-id.png[A screenshot of the FSx for ONTAP security group ID.]
+image:screenshot-fsx-security-group-id-zoom.png[A screenshot of the FSx for ONTAP security group ID.]
 
 === Inbound rules
 
