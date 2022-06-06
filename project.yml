@@ -7,10 +7,6 @@ settings:
     pdf_enabled: true
     harmony_enabled: true
 sidebar:
-  product-family:
-    name: Cloud Manager
-    repo: cloud-manager-family
-    sidebar_label: All Cloud Manager documentation
   entries:
     - title: Amazon FSx for ONTAP docs
       url: /index.html
@@ -45,6 +41,7 @@ sidebar:
 product-family:
     name: Cloud Manager
     repo: cloud-manager-family
+    sidebar_label: All Cloud Manager documentation
 homepage:
   tiles:
     - title: Get started
