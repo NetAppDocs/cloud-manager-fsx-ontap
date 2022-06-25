@@ -127,14 +127,14 @@ image:screenshot_fsx_working_environment_discover.png[A screenshot of discoverin
 . Select existing credentials or create new credentials. Click *Next*.
 
 . Select the AWS region and the working environment you want to add.
-+
-image:screenshot_fsx_working_environment_select.png[A screenshot of selecting the AWS region and working environment]
 
 . Click *Add*.
 
 .Result
 
 Cloud Manager displays your discovered FSx for ONTAP file system.
+
+image:screenshot_fsx_working_environment_select.png[A screenshot of selecting the AWS region and working environment]
 
 == Remove FSx for ONTAP from the workspace
 
