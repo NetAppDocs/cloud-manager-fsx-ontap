@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: use/task-creating-fsx-working-environment.html
-keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment
+keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones
 summary: Cloud Manager enables you to create an FSx for ONTAP working environment to add volumes and manage additional data services.
 ---
 
@@ -57,12 +57,21 @@ image:screenshot_add_fsx_credentials.png[A screenshot of adding credentials for 
 
 . Provide region and VPC information:
 
-.. Select a region and VPC with subnets in at least two Availability Zones so each node is in a dedicated Availability Zone.
-.. Accept the default security group or select a different one. link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html[AWS security groups^] control inbound and outbound traffic. These are configured by your AWS admin and are associated with your link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html[AWS elastic network interface (ENI)^].
-.. Select an Availability Zone and subnet for each node.
-.. Click *Next*.
+.. Select a *Single Availability Zone* or *Multiple Availability Zones* HA deployment model.
 +
+image:screenshot-ha-deployment-models.png[A screenshot of the selection radio buttons for single or multiple Availability Zone deployment models.]
+.. Select a region and VPC. 
++
+[NOTE] 
+================
+For multiple Availability Zones, select subnets in at least two Availability Zones so each node is in a dedicated Availability Zone.
+
 image:screenshot_add_fsx_region.png[A screenshot of adding region and VPC for FSx for ONTAP]
+================
+
+.. Accept the default security group or select a different one. link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html[AWS security groups^] control inbound and outbound traffic. These are configured by your AWS admin and are associated with your link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html[AWS elastic network interface (ENI)^].
+.. Click *Next*.
+
 
 . Leave _CIDR Range_ empty and click *Next* to automatically set an available range. Optionally, you can use https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-transit-gateway.html[AWS Transit Gateway^] to manually configure a range.
 +
@@ -118,14 +127,14 @@ image:screenshot_fsx_working_environment_discover.png[A screenshot of discoverin
 . Select existing credentials or create new credentials. Click *Next*.
 
 . Select the AWS region and the working environment you want to add.
-+
-image:screenshot_fsx_working_environment_select.png[A screenshot of selecting the AWS region and working environment]
 
 . Click *Add*.
 
 .Result
 
 Cloud Manager displays your discovered FSx for ONTAP file system.
+
+image:screenshot_fsx_working_environment_select.png[A screenshot of selecting the AWS region and working environment]
 
 == Remove FSx for ONTAP from the workspace
 
