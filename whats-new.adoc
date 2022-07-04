@@ -16,6 +16,16 @@ summary: Learn what's new in Amazon FSx for ONTAP.
 Learn what's new in Amazon FSx for ONTAP.
 
 //tag::whats-new[]
+== 3 July 2022
+
+* You can now select a single or multiple Availability Zone HA deployment model.
++
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-ontap-working-environment[Create an FSx for ONTAP working environment]
+
+* AWS GovCloud account authentication is now supported in Cloud Manager. 
++
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html#set-up-the-iam-role[Set up the IAM role]
+
 == 27 February 2022
 
 === Assume IAM role
@@ -34,6 +44,8 @@ You can create iSCSI volumes for FSx for ONTAP using the Cloud Manager API and m
 
 You can link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes[select volume units (GiB or TiB) when creating volumes] in FSx for ONTAP.
 
+//end::whats-new[]
+
 == 4 October 2021
 
 === Create CIFS volumes using Cloud Manager
@@ -43,8 +55,6 @@ Now you can link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-
 === Edit volumes using Cloud Manager
 
 Now you can link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#editing-volumes[edit FSx for ONTAP volumes using Cloud Manager].
-
-//end::whats-new[]
 
 == 2 September 2021
 
