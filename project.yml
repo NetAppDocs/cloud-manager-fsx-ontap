@@ -24,8 +24,10 @@ sidebar:
           url: /requirements/reference-security-groups-fsx.html
     - title: Use Amazon FSx for ONTAP
       entries:
-        - title: Create and manage a working environment
+        - title: Create or discover a working environment
           url: /use/task-creating-fsx-working-environment.html
+        - title: Manage a working environment
+          url: /use/task-manage-working-environment.html
         - title: Create and mount volumes
           url: /use/task-add-fsx-volumes.html
         - title: Manage volumes and data services
@@ -58,8 +60,10 @@ homepage:
           url: /requirements/reference-security-groups-fsx.html
     - title: Use Amazon FSx for ONTAP
       links:
-        - title: Create and manage the working environment
+        - title: Create or discover a working environment
           url: /use/task-creating-fsx-working-environment.html
+        - title: Manage the working envionment
+          url: /use/task-manage-working-environment.html
         - title: Create and mount volumes
           url: /use/task-add-fsx-volumes.html
         - title: Manage volumes and data services
