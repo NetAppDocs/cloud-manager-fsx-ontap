@@ -112,9 +112,33 @@ image:screenshot_add_fsx_cloud.png[A screenshot of Amazon FSx for ONTAP on the w
 
 You can now add volumes to your FSx for ONTAP working environment using Cloud Manager.
 
-== Discover an existing FSx for ONTAP file system
+== Discover an existing FSx for ONTAP file system 
 
-If you created an FSx for ONTAP file system using the AWS Management Console or if you want to restore a working environment you previously removed, you can discover it using Cloud Manager.
+If you created an FSx for ONTAP file system using the AWS Management Console or want to restore a working environment you previously removed, you can discover it using **My Opportunities** or manually.
+
+=== Discover using My Opportunities
+
+If you previously provided your AWS credentials to Cloud manager, *My Opportunities* can automatically discover and suggest FSx for ONTAP file systems to add and manage using Cloud Manager. You can also review available data services. 
+
+.Steps
+
+. In Cloud Manager, click the *My Opportunities* tab. 
+
+. The count of discovered FSx for ONTAP file systems displays. Click *Discover*.  
++
+image:screenshot-opportunities.png[A screenshot of the My Opportunities page for FSx for ONTAP.]
+
+. Select one or more file systems and click *Discover* to add them to the Canvas. 
+
+[NOTE]
+===============================
+* If you select an un-named cluster, you will receive a prompt to enter a name for the cluster.
+
+* If you select a cluster that doesn't have the credentials required to allow Cloud Manager to manage the FSx for ONTAP file system, you'll receive a prompt to select credentials with the required permissions. 
+===============================
+
+=== Discover manually
+You can manually discover an FSx for ONTAP file system you added using the AWS Management Console or that you previously removed from Cloud Manager. 
 
 .Steps
 
