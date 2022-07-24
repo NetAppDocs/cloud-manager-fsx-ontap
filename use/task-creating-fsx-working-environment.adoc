@@ -118,7 +118,7 @@ If you created an FSx for ONTAP file system using the AWS Management Console or 
 
 === Discover using My Opportunities
 
-If you previously provided your AWS credentials to Cloud manager, *My Opportunities* can automatically discover and suggest FSx for ONTAP file systems to add and manage using Cloud Manager. You can also review available data services. 
+If you previously provided your AWS credentials to Cloud Manager, *My Opportunities* can automatically discover and suggest FSx for ONTAP file systems to add and manage using Cloud Manager. You can also review available data services. 
 
 .Steps
 
