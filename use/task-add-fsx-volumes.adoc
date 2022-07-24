@@ -52,7 +52,7 @@ image:screenshot_fsx_volume_new.png[A screenshot of the FSx for ONTAP volume tab
 +
 image:screenshot_fsx_volume_details.png[A screenshot of the volume details and protection fields for FSx for ONTAP volume creation.]
 
-. *Protocol*: Select the an NFS, CIFS, or iSCSI volume protocol.
+. *Protocol*: Select an NFS, CIFS, or iSCSI volume protocol.
 .. For NFS:
 * Select an Access Control policy.
 * Select the NFS versions.
