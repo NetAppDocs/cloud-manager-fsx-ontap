@@ -87,7 +87,7 @@ image:screenshot_add_fsx_encryption.png[A screenshot of setting the default mast
 
 . Configure your storage:
 
-.. Select the throughput, capacity, and unit.
+.. Select the throughput, capacity, and unit. You can change the throughput capacity at any time. 
 .. You can optionally specify an IOPS value. If you don't specify an IOPS value, Cloud Manager will set a default value based on 3 IOPS per GiB of the total capacity entered. For example, if you enter 2000 GiB for the total capacity and no value for the IOPS, the effective IOPS value will be set to 6000.
 +
 WARNING: If you specify an IOPS value that does not meet the minimum requirements, you'll receive an error when adding the working environment.
