@@ -32,6 +32,8 @@ image:screenshot-change-thruput.png[A screenshot of the location of the change t
 . Click the pencil icon (image:icon-pencil.png[Image of the pencil edit icon.]) to open the *Throughput Capacity* edit page.
 . Select a new throughput capacity from the dropdown and click *Update*. This change can take up to 25 minutes to take effect and does not disrupt data access.
 
+NOTE: Changing throughput impacts the cost of the FSx for ONTAP service.
+
 
 == Remove FSx for ONTAP from the workspace
 
