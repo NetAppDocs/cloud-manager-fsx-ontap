@@ -46,6 +46,7 @@ Be sure to do the following:
                 "ec2:CreateTags",
                 "kms:Describe*",
                 "kms:List*",
+                "kms:CreateGrant",
                 "iam:CreateServiceLinkedRole"
             ],
             "Resource": "*"
