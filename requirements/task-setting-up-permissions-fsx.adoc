@@ -30,7 +30,7 @@ Be sure to do the following:
 * Under *Trusted entity type*, select *AWS account*.
 * Select *Another AWS account* and enter the ID of the Cloud Manager. 
 ** For Cloud Manager SaaS: 952013314444
-** For AWS GovCloud (US): 
+** For AWS GovCloud (US): 033442085313
 * Create a policy that includes the following permissions:
 +
 [source,json]
@@ -46,6 +46,7 @@ Be sure to do the following:
                 "ec2:CreateTags",
                 "kms:Describe*",
                 "kms:List*",
+                "kms:CreateGrant",
                 "iam:CreateServiceLinkedRole"
             ],
             "Resource": "*"
