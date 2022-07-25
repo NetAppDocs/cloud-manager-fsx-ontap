@@ -96,14 +96,14 @@ The listed DNS server must contain the service location records (SRV) needed to 
 .. For iSCSI:
 You can connect your LUN using an existing initiator group or by creating a new one. To map an existing initiator group, select your operating system and one or more initiator groups. 
 +
-image:screenshot-volume-protocol-iscsi.png[A screenshot of the iSCSI configuration FSx for ONTAP volume creation.]
-+
 To create a new initiator group:
 
 ... Select **Create new**.
 ... Select your operating system.
 ... Click to add one or more host iSCSI qualified names (IQN). You can select existing IQNs or add new IQNs. For details on how to find the IQN for a volume, see link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connect-lun.html[Connect a host to a LUN^].
 ... Enter an **Initiator Group Name**.
++
+image:screenshot-volume-protocol-iscsi.png[A screenshot of the iSCSI configuration FSx for ONTAP volume creation.]
 
 .. Click *Next*.
 
