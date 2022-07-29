@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: use/task-creating-fsx-working-environment.html
-keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones
-summary: Cloud Manager enables you to create an FSx for ONTAP working environment to add volumes and manage additional data services.
+keywords: amazon fsx for ontap, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover
+summary: Using Cloud Manager you can create or discover an FSx for ONTAP working environments to add and manage volumes and additional data services.
 ---
 
-= Create and manage an Amazon FSx for ONTAP working environment
+= Create or discover an Amazon FSx for ONTAP working environment
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: Cloud Manager enables you to create an FSx for ONTAP working environmen
 :imagesdir: ../media/
 
 [.lead]
-Using Cloud Manager you can create and manage FSx for ONTAP working environments to add and manage volumes and additional data services.
+Using Cloud Manager you can create or discover an FSx for ONTAP working environments to add and manage volumes and additional data services.
 
 == Create an Amazon FSx for ONTAP working environment
 
