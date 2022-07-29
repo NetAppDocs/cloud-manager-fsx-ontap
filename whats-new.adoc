@@ -22,16 +22,11 @@ Learn what's new in Amazon FSx for ONTAP.
 +
 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system[Discover FSx for ONTAP using My Opportunities]
 
-* You can now replicate to on-premises and other FSx for ONTAP systems using FSx for ONTAP as the source. 
+* You can now link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-throughput-capacity[change throughput capacity] at any time after you create the FSx for ONTAP working environment.
 
-+
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#replicate-and-sync-data[Replicate and sync data]
+* You can now link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#replicate-and-sync-data[replicate and sync data] to on-premises and other FSx for ONTAP systems using FSx for ONTAP as the source. 
 
 * You can now link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes[create iSCSI volumes in FSx for ONTAP using Cloud Manager]. 
-
-* You can now  change the throughput capacity at any time after you create the FSx for ONTAP working environment.
-+
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html[Manage an Amazon FSx for ONTAP working environment]
 
 == 3 July 2022
 
