@@ -13,7 +13,7 @@ summary: Using Cloud Manager you can create or discover an FSx for ONTAP working
 :imagesdir: ../media/
 
 [.lead]
-Using Cloud Manager you can create or discover an FSx for ONTAP working environments to add and manage volumes and additional data services.
+Using Cloud Manager you can create or discover an FSx for ONTAP working environment to add and manage volumes and additional data services.
 
 == Create an Amazon FSx for ONTAP working environment
 
