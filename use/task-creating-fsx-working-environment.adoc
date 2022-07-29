@@ -140,6 +140,8 @@ image:screenshot-opportunities.png[A screenshot of the My Opportunities page for
 === Discover manually
 You can manually discover an FSx for ONTAP file system you added using the AWS Management Console or that you previously removed from Cloud Manager. 
 
+image:screenshot_fsx_working_environment_select.png[A screenshot of selecting the AWS region and working environment]
+
 .Steps
 
 . In Cloud Manager, click *Add Working Environment*, select *Amazon Web Services*.
