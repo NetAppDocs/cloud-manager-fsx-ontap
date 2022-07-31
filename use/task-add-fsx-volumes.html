@@ -407,6 +407,8 @@
           
 
 
+
+
     <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
   
 
@@ -506,7 +508,9 @@
         <div class="na-navbar-padding"> Use Amazon FSx for ONTAP</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html">
-        Create and manage a working environment
+        Create or discover a working environment
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html">
+        Manage a working environment
       </a></li><li class="  active "><a class="na-navbar-padding" href="/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html">
         Create and mount volumes
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html">
@@ -575,7 +579,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-04 13:30:10 +0000">04/04/2022</time>
+    <time datetime="2022-07-31 19:54:26 +0000">07/31/2022</time>
     
   
 
@@ -612,10 +616,7 @@
 <h2 id="create-volumes">Create volumes</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You can create and manage NFS and CIFS volumes from your FSx for ONTAP working environment in Cloud Manager. NFS and CIFS volumes created using ONTAP CLI will also be visible in your FSx for ONTAP working environment.</p>
-</div>
-<div class="paragraph">
-<p>You can create iSCSI volumes using ONTAP CLI, ONTAP API, or Cloud Manager API and manage them using Cloud Manager in your FSx for ONTAP working environment.</p>
+<p>You can create and manage NFS, CIFS, and iSCSI volumes from your FSx for ONTAP working environment in Cloud Manager. Volumes created using ONTAP CLI will also be visible in your FSx for ONTAP working environment.</p>
 </div>
 <div class="paragraph">
 <div class="title">Before you begin</div>
@@ -678,7 +679,7 @@
 </div>
 </li>
 <li>
-<p><strong>Protocol</strong>: Select the an NFS or CIFS volume protocol.</p>
+<p><strong>Protocol</strong>: Select an NFS, CIFS, or iSCSI volume protocol.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -778,6 +779,32 @@ The listed DNS server must contain the service location records (SRV) needed to 
 <p>If you select a Workgroup setup, enter the server and workgroup name for a workgroup configured for CIFS.</p>
 </li>
 </ul>
+</div>
+</li>
+<li>
+<p>For iSCSI:<br>
+You can connect your LUN using an existing initiator group or by creating a new one. To map an existing initiator group, select your operating system and one or more initiator groups.</p>
+<div class="paragraph">
+<p>To create a new initiator group:</p>
+</div>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Select <strong>Create new</strong>.</p>
+</li>
+<li>
+<p>Select your operating system.</p>
+</li>
+<li>
+<p>Click to add one or more host iSCSI qualified names (IQN). You can select existing IQNs or add new IQNs. For details on how to find the IQN for a volume, see <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connect-lun.html" target="_blank" rel="noopener">Connect a host to a LUN</a>.</p>
+</li>
+<li>
+<p>Enter an <strong>Initiator Group Name</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-volume-protocol-iscsi.png" alt="A screenshot of the iSCSI configuration FSx for ONTAP volume creation."></span></p>
+</div>
+</li>
+</ol>
 </div>
 </li>
 <li>
