@@ -17,9 +17,7 @@ After you set up your working environment, you can create and mount FSx for ONTA
 
 == Create volumes
 
-You can create and manage NFS and CIFS volumes from your FSx for ONTAP working environment in Cloud Manager. NFS and CIFS volumes created using ONTAP CLI will also be visible in your FSx for ONTAP working environment.
-
-You can create iSCSI volumes using ONTAP CLI, ONTAP API, or Cloud Manager API and manage them using Cloud Manager in your FSx for ONTAP working environment.
+You can create and manage NFS, CIFS, and iSCSI volumes from your FSx for ONTAP working environment in Cloud Manager. Volumes created using ONTAP CLI will also be visible in your FSx for ONTAP working environment.
 
 .Before you begin
 
@@ -54,7 +52,7 @@ image:screenshot_fsx_volume_new.png[A screenshot of the FSx for ONTAP volume tab
 +
 image:screenshot_fsx_volume_details.png[A screenshot of the volume details and protection fields for FSx for ONTAP volume creation.]
 
-. *Protocol*: Select the an NFS or CIFS volume protocol.
+. *Protocol*: Select an NFS, CIFS, or iSCSI volume protocol.
 .. For NFS:
 * Select an Access Control policy.
 * Select the NFS versions.
@@ -94,6 +92,18 @@ The listed DNS server must contain the service location records (SRV) needed to 
 |===
 
 * If you select a Workgroup setup, enter the server and workgroup name for a workgroup configured for CIFS.
+
+.. For iSCSI:
+You can connect your LUN using an existing initiator group or by creating a new one. To map an existing initiator group, select your operating system and one or more initiator groups. 
++
+To create a new initiator group:
+
+... Select **Create new**.
+... Select your operating system.
+... Click to add one or more host iSCSI qualified names (IQN). You can select existing IQNs or add new IQNs. For details on how to find the IQN for a volume, see link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connect-lun.html[Connect a host to a LUN^].
+... Enter an **Initiator Group Name**.
++
+image:screenshot-volume-protocol-iscsi.png[A screenshot of the iSCSI configuration FSx for ONTAP volume creation.]
 
 .. Click *Next*.
 

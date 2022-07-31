@@ -16,6 +16,18 @@ summary: Learn what's new in Amazon FSx for ONTAP.
 Learn what's new in Amazon FSx for ONTAP.
 
 //tag::whats-new[]
+== 31 July 2022
+
+* If you previously provided your AWS credentials to Cloud Manager, the new *My Opportunities* feature can automatically discover and suggest FSx for ONTAP file systems to add and manage using Cloud Manager. You can also review available data services through the *My Opportunities* tab. 
++
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system[Discover FSx for ONTAP using My Opportunities]
+
+* You can now link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-throughput-capacity[change throughput capacity] at any time after you create the FSx for ONTAP working environment.
+
+* You can now link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#replicate-and-sync-data[replicate and sync data] to on-premises and other FSx for ONTAP systems using FSx for ONTAP as the source. 
+
+* You can now link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes[create iSCSI volumes in FSx for ONTAP using Cloud Manager]. 
+
 == 3 July 2022
 
 * You can now select a single or multiple Availability Zone HA deployment model.
@@ -34,6 +46,7 @@ When you create an FSx for ONTAP working environment, you now must provide the A
 
 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[Learn how to set up permissions for FSx for ONTAP].
 
+//end::whats-new[]
 == 31 October 2021
 
 === Create iSCSI volumes using Cloud Manager API
